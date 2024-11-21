@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Popup-box</title>
+  <link rel="stylesheet" href="styles/header.css">
+  <link rel="stylesheet" href="styles/footer.css">
+  <link rel="stylesheet" href="styles/style.css">
+  <link rel="stylesheet" href="styles/ripple_effect.css">
+  <link rel="stylesheet" href="styles/media_query.css">
+</head>
+
+<body>
+
+  <header class="header">
+    <div class="hdr-ctr">
+      <div class="logo-ctr">
+        <img src="images/logo.png" alt="Logo">
+      </div>
+      <nav class="nav-ctr">
+        <a href="">Home</a>
+        <a href="">Track</a>
+        <a href="">Blog</a>
+        <a href="">Contact</a>
+      </nav>
+      <button onclick="openCloseMenu()" class="menu-btn">
+        <img src="images/hamburgen_menu_icon.png" alt="Menu">
+      </button>
+      <div class="link-ctr">
+        <a
+          href="https://www.linkedin.com/in/santhosh-pandi-3aa7b3236/?lipi=urn%3Ali%3Apage%3Ad_flagship3_feed%3BFPOKE7yQRNq%2FTDcVe8Zh2g%3D%3D"><img
+            src="images/linkedin-icon.svg" alt="linkedin"></a>
+        <a href="https://github.com/santhoshpandi/"><img src="images/github-icon.svg" alt="github"></a>
+        <a href="https://santhoshpandi.github.io/RockPaperScissor/"><img src="images/game-icon.png" alt="game"></a>
+      </div>
+    </div>
+    <nav class="slide-nav-ctr">
+      <a href="">Home</a>
+      <a href="">Track</a>
+      <a href="">Blog</a>
+      <a href="">Contact</a>
+    </nav>
+  </header>
+
+  <div class="blog-ctr">
+    <div class="intro-ctr">
+      <h2>Desert</h2>
+      <div class="img-ctr"><img src="images/desert_photo.jpg" alt=""></div>
+    </div>
+    <div class="detail">
+      <p>
+        Deserts are the driest places on Earth, with some characteristics. <br>
+      <h4>Vegetation</h4>
+      Deserts have sparse vegetation, with trees usually absent. Plants that do grow in deserts are often tough and
+      wiry, with small or no leaves, water-resistant cuticles, and sometimes spines.
+      </p>
+    </div>
+  </div>
+
+  <div class="img-box">
+    <div class="rdm-img-ctr"><img src="https://picsum.photos/200/200?random=1"></div>
+    <div class="rdm-img-ctr"><img src="https://picsum.photos/200/200?random=2"></div>
+    <div class="rdm-img-ctr"><img src="https://picsum.photos/200/200?random=3"></div>
+    <div class="rdm-img-ctr"><img src="https://picsum.photos/200/200?random=4"></div>
+    <div class="rdm-img-ctr"><img src="https://picsum.photos/200/200?random=5"></div>
+    <div class="rdm-img-ctr"><img src="https://picsum.photos/200/200?random=6"></div>
+    <div class="rdm-img-ctr"><img src="https://picsum.photos/200/200?random=7"></div>
+    <div class="rdm-img-ctr"><img src="https://picsum.photos/200/200?random=8"></div>
+  </div>
+
+
+
+  <button class="show-pop-btn">
+    <div class="ripple-effect-ctr"></div>
+    +
+  </button>
+
+  <div class="pop-ctr">
+    <div class="pop-box">
+      <br>
+      You successfully opened the pop-up box. <br>
+      Have a nice day..😊
+      <img src="images/spidy.gif" alt="image">
+      <button class="close-pop-btn">
+        X
+      </button>
+    </div>
+  </div>
+
+  <footer class="footer">
+    <div class="details">
+      Developed by Santhosh Pandi🦊<br>
+      <div class="copyright">
+        &copy; 2024 SanthoshPandi🦋
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+
+</html>

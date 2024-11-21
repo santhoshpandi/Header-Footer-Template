@@ -1,0 +1,130 @@
+.header{
+  width: 100%;
+  position: sticky;
+  background-color: tomato;
+  top: 0;
+  z-index: 4;
+
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  box-shadow: 0px 5px 5px gray;
+
+}
+
+.hdr-ctr{
+  flex-grow: 1;
+
+  max-width: 81rem;
+  margin: 0 auto;
+
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 15px;
+}
+
+/* Left Part of the Header. */
+
+.logo-ctr{
+  width: 100px;
+  height: 50%;
+}
+
+.logo-ctr img{
+  width: 100%;
+  height: 100%;  
+  border-radius: 5px;
+}
+
+/* Middle Part of the Header. */
+
+.nav-ctr{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 15px;
+  padding: 10px 5px;
+}
+
+
+.nav-ctr a,.slide-nav-ctr a{
+  text-align: center;
+  margin: 0px 5px;
+  text-decoration: none;
+  color: black;
+  font-size: large;
+  padding: 10px;
+  transition-duration: 0.15s;
+}
+
+.nav-ctr a:hover,.slide-nav-ctr a:hover{
+  border-radius: 3px;
+  background-color: black;
+  color: white;
+}
+
+.menu-btn{
+  width: 35px;
+  height: 35px;
+  background-color: transparent;
+  display: none;
+  margin-left: auto;
+  margin-right: 10px;
+  border: none;
+
+  cursor: pointer;
+  transition-duration: 0.15s;
+}
+
+.menu-btn img{
+  width: 100%;
+  height: 100%;
+}
+
+/* Right Part of the Header. */
+
+.link-ctr{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.link-ctr a{
+  width: 33px;
+  padding: 5px;
+  margin: 0px 5px;
+}
+
+.link-ctr img{
+  width: 100%;
+  height: 100%;
+  transition-duration: 0.15s;
+}
+
+.link-ctr img:hover{
+  transform: scale(1.2);
+  filter: drop-shadow(0px 0px 3px black);
+}
+
+/* Slide menu container. */
+
+.slide-nav-ctr {
+  max-width: 81rem;
+  margin: 0 auto;
+
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 5px;  
+  padding: 5px 20px;
+  padding-bottom: 10px;
+}
+
+.slide-nav-ctr a{
+  text-align: start;
+  width: 100%;
+}
+
+
+
