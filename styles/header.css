@@ -1,8 +1,10 @@
 .header{
   width: 100%;
-  position: sticky;
+  position: fixed;
   background-color: tomato;
   top: 0;
+  left: 0;
+  right: 0;
   z-index: 4;
 
   border-bottom-left-radius: 5px;
@@ -132,7 +134,7 @@
   background-color: tomato;
   z-index: 5;
   transition: 0.15s;
-  transform: translateY(-100%);
+  transform: translateY(-150%);
 }
 
 .slide-nav-ctr.show{
