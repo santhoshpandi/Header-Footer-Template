@@ -17,6 +17,10 @@
   max-width: 81rem;
   margin: 0 auto;
 
+  position: sticky;
+  z-index: 6;
+  background-color: tomato;
+
   display: flex;
   flex-wrap: wrap;
   align-items: center;
@@ -113,12 +117,27 @@
   max-width: 81rem;
   margin: 0 auto;
 
-  display: none;
+  display: flex;
   flex-direction: column;
   align-items: center;
   row-gap: 5px;  
   padding: 5px 20px;
   padding-bottom: 10px;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+
+  position: fixed;
+  left: 0;
+  right: 0;
+  background-color: tomato;
+  z-index: 5;
+  transition: 0.15s;
+  transform: translateY(-100%);
+}
+
+.slide-nav-ctr.show{
+  transition: 0.15s;
+  transform: translateY(0%);
 }
 
 .slide-nav-ctr a{

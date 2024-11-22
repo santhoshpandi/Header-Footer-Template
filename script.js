@@ -2,17 +2,16 @@
 // Here I have used onclick event for menu button
 var slide_nav_ctr = document.querySelector('.slide-nav-ctr');
 var menu_btn = document.querySelector('.menu-btn');
-slide_nav_ctr.style.display='none';
 
 function openCloseMenu(){
-  if(slide_nav_ctr.style.display==='none')
+  if(slide_nav_ctr.classList.contains('show'))
   {    
-    slide_nav_ctr.style.display='flex';
-    menu_btn.style.transform='rotate(-90deg)'
+    slide_nav_ctr.classList.remove('show')
+    menu_btn.style.transform='rotate(0deg)'
   }
   else{
-    slide_nav_ctr.style.display='none'
-    menu_btn.style.transform='rotate(0deg)'
+    slide_nav_ctr.classList.add('show')
+    menu_btn.style.transform='rotate(-90deg)'
   }  
 }
 
