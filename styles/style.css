@@ -11,7 +11,7 @@ body{
 .blog-ctr{
   max-width: 81rem;
   margin: 0 auto;
-  margin-top: 20px;
+  margin-top: 90px;
   display: flex;
   justify-content: center;
   gap: 15px;
